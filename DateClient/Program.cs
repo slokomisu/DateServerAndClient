@@ -11,7 +11,7 @@ namespace DateClient {
 
             // connect to remote device
             try {
-                IPHostEntry ipHostInfo = Dns.Resolve(Dns.GetHostName());
+                IPHostEntry ipHostInfo = Dns.Resolve("noahguillory.me");
                 IPAddress ipAddress = ipHostInfo.AddressList[0];
                 IPEndPoint remoteEP = new IPEndPoint(ipAddress, 8080);
 
